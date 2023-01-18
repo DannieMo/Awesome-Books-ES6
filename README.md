@@ -95,6 +95,8 @@ Clone this repository to your desired folder:
 
 <!-- AUTHORS -->
 
+## Authors
+
 👤 **Daniel Majesty Owiri (Dannie)**
 
 - GitHub: [@dannieMo](https://github.com/DannieMo/)
