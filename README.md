@@ -1,13 +1,11 @@
 <a name="readme-top"></a>
 
 <div align="center">
-
-  <img src="images/Microverse-logo.webp" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h1><b>
 Awesome Books With ES6</b></h1>
-> Awesome Books is a simple website that displays a list of books and allows you to add and remove books from that list. This is a Microverse Module 2 project.
+Awesome Books is a simple website that displays a list of books and allows you to add and remove books from that list. This is a Microverse Module 2 project.
 
 </div>
 
