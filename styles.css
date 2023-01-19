@@ -9,7 +9,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Segeo UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
 li {
@@ -38,7 +38,7 @@ li {
 
 .links-desc {
   list-style: none;
-  border-right: 2px solid 33ee3e;
+  border-right: 2px solid #3e3e3e;
   margin: 0 5px;
   padding: 0 5px;
 }
@@ -48,7 +48,7 @@ li {
 }
 
 .links-desc:hover {
-  color: blue;
+  color: grey;
   cursor: pointer;
 }
 
@@ -83,7 +83,7 @@ li {
 button#book-add-button {
   margin-top: 10px;
   height: 2rem;
-  width: 40px;
+  width: 10%;
   background-color: #fff;
   border: 3px solid black;
   font-weight: 700;
@@ -153,7 +153,7 @@ button#book-add-button {
 .contributor {
   position: absolute;
   right: 0;
-  top: 10px;
+  top: -10px;
   display: flex;
   margin: 0 5px;
 }
