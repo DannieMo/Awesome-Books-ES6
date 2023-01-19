@@ -1,4 +1,4 @@
-const storageKey = "awesomeBooks";
+const storageKey = 'awesomeBooks';
 const timeNow = new Date();
 
 export default class BookShelf {
@@ -31,20 +31,20 @@ export default class BookShelf {
       return element;
     }
 
-    const bookList = document.querySelector(".book-list");
+    const bookList = document.querySelector('.book-list');
     this.arrBooks.forEach((book) => {
-      const bookItem = addElement("div", bookList, "book-item");
-      const bookTitle = addElement("div", bookItem, "book-title");
+      const bookItem = addElement('div', bookList, 'book-item');
+      const bookTitle = addElement('div', bookItem, 'book-title');
       bookTitle.innerHTML = `" ${book.title} "    by ${book.author}`;
 
       const bookRemoveButton = addElement(
-        "button",
+        'button',
         bookItem,
-        "book-remove-button"
+        'book-remove-button',
       );
-      bookRemoveButton.innerHTML = "Remove";
+      bookRemoveButton.innerHTML = 'Remove';
 
-      bookRemoveButton.addEventListener("click", () => {
+      bookRemoveButton.addEventListener('click', () => {
         this.removeBook(book.id);
         this.saveDataToLocalStorage();
         window.location.reload();

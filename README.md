@@ -50,10 +50,6 @@ Awesome Books is a simple website that displays a list of books and allows you t
 - Store and retrieve data
   - The displayed books are stored and retrieved from the local storage of the browser.
 
-# 🔭 Future Features
-
-> I will be adding More functions.
-
 ## Learning Objectives
 
 - Flexbox to place elements in the page.
