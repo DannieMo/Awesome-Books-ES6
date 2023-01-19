@@ -72,8 +72,8 @@ Awesome Books is a simple website that displays a list of books and allows you t
 
 > Describe between 1-3 key features of the application.
 
-- **[It's a website according to the design provided]**
-- **[It allows user to add or delete books from library]**
+- **It's a website according to the design provided**
+- **It allows user to add or delete books from a book library**
 
 <!-- LIVE DEMO -->
 
