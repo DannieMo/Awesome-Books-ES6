@@ -81,7 +81,7 @@ Awesome Books is a simple website that displays a list of books and allows you t
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://danniemo.github.io/Awesome-Books-ES6/)
+- [Live Demo Link](https://github.com/DannieMo/Awesome-Books-ES6.git)
 
 ### Prerequisites
 
