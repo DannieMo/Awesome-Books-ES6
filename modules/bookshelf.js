@@ -1,4 +1,4 @@
-const storageKey = 'awesomeBooks';
+const storageKey = "awesomeBooks";
 const timeNow = new Date();
 
 export default class BookShelf {
@@ -6,25 +6,24 @@ export default class BookShelf {
     this.arrBooks = [];
   }
 
-  addBook(newTitle, newAuthor) {
+  addBook = (newTitle, newAuthor) => {
     const newBook = {
       id: timeNow.getTime(),
       title: newTitle,
       author: newAuthor,
     };
-
     this.arrBooks.push(newBook);
-  }
+  };
 
-  removeBook(id) {
+  removeBook = (id) => {
     this.arrBooks = this.arrBooks.filter((book) => book.id !== id);
-  }
+  };
 
-  saveDataToLocalStorage() {
+  saveDataToLocalStorage = () => {
     localStorage.setItem(storageKey, JSON.stringify(this.arrBooks));
-  }
+  };
 
-  showBooks() {
+  showBooks = () => {
     function addElement(elementType, parent, className) {
       const element = document.createElement(elementType);
       element.classList.add(className);
@@ -32,28 +31,28 @@ export default class BookShelf {
       return element;
     }
 
-    const bookList = document.querySelector('.book-list');
+    const bookList = document.querySelector(".book-list");
     this.arrBooks.forEach((book) => {
-      const bookItem = addElement('div', bookList, 'book-item');
-      const bookTitle = addElement('div', bookItem, 'book-title');
+      const bookItem = addElement("div", bookList, "book-item");
+      const bookTitle = addElement("div", bookItem, "book-title");
       bookTitle.innerHTML = `" ${book.title} "    by ${book.author}`;
 
       const bookRemoveButton = addElement(
-        'button',
+        "button",
         bookItem,
-        'book-remove-button',
+        "book-remove-button"
       );
-      bookRemoveButton.innerHTML = 'Remove';
+      bookRemoveButton.innerHTML = "Remove";
 
-      bookRemoveButton.addEventListener('click', () => {
+      bookRemoveButton.addEventListener("click", () => {
         this.removeBook(book.id);
         this.saveDataToLocalStorage();
         window.location.reload();
       });
     });
-  }
+  };
 
-  loadDataFromLocalStorage() {
+  loadDataFromLocalStorage = () => {
     const dataLoaded = JSON.parse(localStorage.getItem(storageKey));
     if (dataLoaded == null) {
       this.arrBooks = [];
@@ -62,5 +61,5 @@ export default class BookShelf {
     }
 
     this.showBooks();
-  }
+  };
 }
